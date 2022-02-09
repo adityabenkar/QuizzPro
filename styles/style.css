@@ -1,0 +1,101 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+
+:root {
+  background: #2d3436;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nova Square";
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b2bec3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #636e72;
+  border-radius: 0.5rem;
+}
+
+body {
+  height: 100vh;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #dfe6e9;
+  margin: 1rem;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-centre {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  color: #6c5ce7;
+  margin: 0.5rem;
+  padding: 0.5rem 2rem;
+  background: linear-gradient(to right, #a29bfe, #b8b3fa);
+  border-radius: 0.3rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  color: #0984e3;
+  background: #74b9ff;
+  transition: transform 0.3s;
+  transform: scale(1.25);
+  cursor: pointer;
+  box-shadow: 0rem 0rem 1rem rgba(194, 190, 250, 0.75);
+}
+
+#HighscoreBtn {
+  color: #fcc154;
+  background: linear-gradient(to right, #ffeaa7, #fae9b3);
+}
+
+#HighscoreBtn:hover {
+  color: #e17055;
+  background: #fab1a0;
+  box-shadow: 0rem 0rem 1rem rgba(255, 243, 204, 0.75s);
+}

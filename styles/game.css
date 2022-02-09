@@ -1,0 +1,75 @@
+/** @format */
+
+body {
+  color: antiquewhite;
+}
+
+#game {
+  padding: 3rem;
+}
+
+.choice-container {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  width: 100%;
+  border-radius: 0.2rem;
+  background: #74b9ff;
+  margin-bottom: 1rem;
+}
+
+body.HoverBtn .choice-container:hover {
+  background: #0984e3;
+  transition: transform 0.3s;
+  transform: scale(1.03);
+  cursor: pointer;
+  box-shadow: 0rem 0rem 1rem rgba(194, 190, 250, 0.75);
+}
+
+.choice-prefix {
+  padding: 0.5rem 1.5rem;
+}
+
+.choice-text {
+  text-align: left;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+}
+
+.correct {
+  background: linear-gradient(to right, #00b894 50%, #55efc4);
+}
+
+.incorrect {
+  background: linear-gradient(to right, #d63031 50%, #ff7675);
+}
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.hud-prefix {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hud-main-text {
+  text-align: center;
+  margin: 0;
+}
+
+#progressBar {
+  width: 15rem;
+  height: 2rem;
+  border: 0.25rem solid #55efc4;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+#progressBarfull {
+  background: #55efc4;
+  height: 100%;
+  width: 0%;
+}
