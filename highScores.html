@@ -6,25 +6,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>HighScores</title>
     <link rel="shortcut icon" href="./assets/brain.png" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/highScores.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <script src="./scripts/highScores.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <div id="home" class="flex-column flex-centre">
-        <h1>Are you ready ?</h1>
-        <a href="./game.html" class="btn"
-          >Play <i class="fas fa-laptop-code"></i>
-        </a>
-        <a href="./highScores.html" id="HighscoreBtn" class="btn"
-          >High score <i class="fas fa-crown"></i
+      <div id="highScores" class="flex-column flex-centre">
+        <h1 id="finalScore">LearderBoard</h1>
+        <u1 id="highScoresList"></u1>
+        <a href="./index.html" class="btn"
+          >Go Home <i class="fas fa-home"></i
         ></a>
       </div>
     </div>
