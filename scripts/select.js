@@ -1,22 +1,15 @@
 /** @format */
-// import { questions } from "./select.js";
+const html = document.getElementById("html");
+const css = document.getElementById("css");
+const js = document.getElementById("js");
+const jquery = document.getElementById("jquery");
+const java = document.getElementById("java");
+const python = document.getElementById("python");
+const cpp = document.getElementById("cpp");
+const sql = document.getElementById("sql");
+const c = document.getElementById("c");
 
-const body = document.querySelector("body");
-const question = document.querySelector(".question");
-const choices = Array.from(document.querySelectorAll(".choice-text"));
-const progressText = document.querySelector("#progressText");
-const progressBarfull = document.querySelector("#progressBarfull");
-const scoreText = document.querySelector("#score");
-const boardContainer = document.querySelector(".boardContainer");
-const container = document.querySelector(".container");
-
-let currentQuestions = {};
-let acceptingAnswers = true;
-let score = 0;
-let questionCounter = 0;
-let avaliableQuestion = [];
-
-let cpp = [
+let cppq = [
   {
     question: "What is C++ ?",
     choice1: "C++ is an object oriented programming language",
@@ -63,7 +56,7 @@ let cpp = [
   },
 ];
 
-let html = [
+let htmlq = [
   {
     question: "What is html ?",
     choice1: "C++ is an object oriented programming language",
@@ -110,67 +103,16 @@ let html = [
   },
 ];
 
-const scorePoints = 20;
-const maxQuestions = 5;
-
-startGame = (lang) => {
-  score = 0;
-  questionCounter = 1;
-  avaliableQuestion = [...lang];
-  console.log(avaliableQuestion);
-  boardContainer.classList.add("displaynone");
-  container.classList.remove("container");
-  container.classList.add("displayblock");
-  getNewQuestion();
-};
-
-getNewQuestion = () => {
-  if (avaliableQuestion === 0 || questionCounter > maxQuestions) {
-    localStorage.setItem("mostRecentScore", score);
-    return window.location.assign("end.html");
-  }
-
-  progressText.innerText = `Question ${questionCounter} of ${maxQuestions}`;
-  progressBarfull.style.width = `${(questionCounter / maxQuestions) * 100}%`;
-  questionCounter++;
-  const questionIndex = Math.floor(Math.random() * avaliableQuestion.length);
-  currentQuestions = avaliableQuestion[questionIndex];
-  question.innerText = currentQuestions.question;
-  body.classList.add("HoverBtn");
-
-  choices.forEach((choice) => {
-    const number = choice.dataset["number"];
-    choice.innerText = currentQuestions["choice" + number];
-  });
-
-  avaliableQuestion.splice(questionIndex, 1);
-  acceptingAnswers = true;
-};
-
-choices.forEach((choice) => {
-  choice.addEventListener("click", (e) => {
-    if (!acceptingAnswers) return;
-
-    acceptingAnswers = false;
-    const selectedChoice = e.target;
-    const selectedAnswer = selectedChoice.dataset["number"];
-    const classToApply =
-      selectedAnswer == currentQuestions.answer ? "correct" : "incorrect";
-
-    if (classToApply === "correct") incrementScore(scorePoints);
-
-    body.classList.remove("HoverBtn");
-    selectedChoice.parentElement.classList.add(classToApply);
-    setTimeout(() => {
-      selectedChoice.parentElement.classList.remove(classToApply);
-      getNewQuestion();
-    }, 1000);
-  });
+html.addEventListener("click", () => {
+  const questions = htmlq;
+  console.log(questions);
+  localStorage.setItem("questions", questions);
+  return window.location.assign("game.html");
 });
 
-incrementScore = (num) => {
-  score += num;
-  scoreText.innerText = score;
-};
-
-// startGame();
+cpp.addEventListener("click", () => {
+  const questions = cppq;
+  console.log(questions);
+  localStorage.setItem("questions", questions);
+  return window.location.assign("game.html");
+});

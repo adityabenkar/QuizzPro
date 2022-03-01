@@ -7,6 +7,16 @@ body {
 #game {
   padding: 3rem;
 }
+.displaynone {
+  display: none;
+}
+.displayblock {
+  display: block;
+}
+
+.container {
+  display: none;
+}
 
 .choice-container {
   display: flex;

@@ -9,10 +9,40 @@
     <title>Play</title>
     <link rel="shortcut icon" href="./assets/brain.png" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/select.css" />
     <link rel="stylesheet" href="./styles/game.css" />
     <script src="./scripts/game.js" defer></script>
   </head>
   <body class="HoverBtn">
+    <div class="boardContainer">
+      <a class="btn" onclick="startGame(html)" id="html"
+        ><i class="fab fa-html5"></i> html</a
+      >
+      <a class="btn" onclick="startGame(css)" id="css"
+        ><i class="fab fa-css3"></i> css</a
+      >
+      <a class="btn" onclick="startGame(js)" id="js"
+        ><i class="fab fa-js"></i> javascript</a
+      >
+      <a class="btn" onclick="startGame(jquery)" id="jquery"
+        ><i class="fas fa-code"></i> jquery</a
+      >
+      <a class="btn" onclick="startGame(java)" id="java"
+        ><i class="fab fa-java"></i> java</a
+      >
+      <a class="btn" onclick="startGame(python)" id="python"
+        ><i class="fab fa-python"></i> python</a
+      >
+      <a class="btn" onclick="startGame(cpp)" id="cpp"
+        ><i class="fas fa-code-branch"></i> c++</a
+      >
+      <a class="btn" onclick="startGame(sql)" id="sql"
+        ><i class="fas fa-database"></i> sql</a
+      >
+      <a class="btn" onclick="startGame(c)" id="c"
+        ><i class="fas fa-code-branch"></i> c</a
+      >
+    </div>
     <div class="container">
       <div id="game" class="justify-centre flex-column">
         <div id="hud">

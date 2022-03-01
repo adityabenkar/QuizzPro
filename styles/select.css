@@ -1,0 +1,97 @@
+/** @format */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  text-align: center;
+  grid-gap: 1rem;
+}
+
+a {
+  font-size: 2rem;
+}
+
+.btn {
+  color: #2d3436;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+#html {
+  background: #e44d26;
+}
+#html:hover {
+  color: #e44d26;
+  border: 0.5px solid #e44d26;
+  background: #2d3436;
+}
+#css {
+  background: #264de4;
+}
+#css:hover {
+  color: #264de4;
+  border: 0.5px solid #264de4;
+  background: #2d3436;
+}
+#js {
+  background: #e4d726;
+}
+#js:hover {
+  color: #e4d726;
+  border: 0.5px solid #e4d726;
+  background: #2d3436;
+}
+#jquery {
+  background: #26e4e4;
+}
+#jquery:hover {
+  color: #26e4e4;
+  border: 0.5px solid #26e4e4;
+  background: #2d3436;
+}
+#java {
+  background: #f89820;
+}
+#java:hover {
+  color: #f89820;
+  border: 0.5px solid #f89820;
+  background: #2d3436;
+}
+#python {
+  background: #ffe873;
+}
+#python:hover {
+  color: #ffe873;
+  border: 0.5px solid #ffe873;
+  background: #2d3436;
+}
+#cpp {
+  background: #1100ff;
+}
+#cpp:hover {
+  color: #1100ff;
+  border: 0.5px solid #1100ff;
+  background: #2d3436;
+}
+#sql {
+  background: #b1b1b1;
+}
+#sql:hover {
+  color: #b1b1b1;
+  border: 0.5px solid #b1b1b1;
+  background: #2d3436;
+}
+#c {
+  background: #e45858;
+}
+#c:hover {
+  color: #e45858;
+  background: #2d3436;
+  border: 0.5px solid #e45858;
+}
