@@ -1,4 +1,5 @@
 /** @format */
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
 
 body {
   color: antiquewhite;
@@ -21,7 +22,7 @@ body {
 .choice-container {
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 100%;
   border-radius: 0.2rem;
   background: #74b9ff;
@@ -61,7 +62,7 @@ body.HoverBtn .choice-container:hover {
   margin-bottom: 1rem;
 }
 .hud-prefix {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -71,8 +72,8 @@ body.HoverBtn .choice-container:hover {
 }
 
 #progressBar {
-  width: 15rem;
-  height: 2rem;
+  width: 12.5rem;
+  height: 1.5rem;
   border: 0.25rem solid #55efc4;
   border-radius: 2rem;
   overflow: hidden;
@@ -82,4 +83,15 @@ body.HoverBtn .choice-container:hover {
   background: #55efc4;
   height: 100%;
   width: 0%;
+}
+
+.codeContainer {
+  margin: 0 1rem 1rem 1rem;
+  background: black;
+  font-family: "Source Code Pro", monospace;
+  border-radius: 0.5rem;
+}
+
+.padding {
+  padding: 1rem;
 }
