@@ -34,6 +34,7 @@ async function startGame(lang) {
   })
     .then((response) => response.json())
     .then((data) => data[`${langId}`]);
+  console.log(language);
   avaliableQuestion = [...language];
   // console.log(avaliableQuestion);
   boardContainer.classList.add("displaynone");
