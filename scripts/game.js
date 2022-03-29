@@ -28,9 +28,7 @@ async function startGame(lang) {
   questionCounter = 1;
   const language = await fetch("../languages.json")
     .then((response) => response.json())
-    .then((data) => data[`${langId}`])
-    .catch((err) => console.log(err));
-  console.log(language);
+    .then((data) => data[`${langId}`]);
   avaliableQuestion = [...language];
   // console.log(avaliableQuestion);
   boardContainer.classList.add("displaynone");
