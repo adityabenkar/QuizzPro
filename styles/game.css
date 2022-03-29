@@ -29,6 +29,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.backCol {
+  background: #74b9ff;
+}
+
 body.HoverBtn .choice-container:hover {
   background: #0984e3;
   transition: transform 0.3s;
@@ -94,4 +98,29 @@ body.HoverBtn .choice-container:hover {
 
 .padding {
   padding: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .boardContainer {
+    grid-template-columns: repeat(2, auto);
+  }
+  .hud-prefix {
+    font-size: 1.25rem;
+  }
+  #progressBar {
+    width: 10rem;
+    height: 1.25rem;
+  }
+  .choice-container {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .boardContainer {
+    grid-template-columns: repeat(1, auto);
+    /* display: flex;
+    flex-direction: column; */
+    grid-gap: 0;
+  }
 }

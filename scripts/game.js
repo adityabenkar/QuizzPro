@@ -3,6 +3,7 @@
 
 const body = document.querySelector("body");
 const question = document.querySelector(".question");
+const choiceContainer = document.querySelector(".choice-container");
 const choices = Array.from(document.querySelectorAll(".choice-text"));
 const progressText = document.querySelector("#progressText");
 const progressBarfull = document.querySelector("#progressBarfull");
@@ -52,6 +53,7 @@ getNewQuestion = () => {
   if (code.innerText != "") code.classList.add("padding");
   else code.classList.remove("padding");
   body.classList.add("HoverBtn");
+  choiceContainer.classList.add("choice-container");
 
   choices.forEach((choice) => {
     const number = choice.dataset["number"];

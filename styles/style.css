@@ -100,3 +100,9 @@ h1 {
   background: #fab1a0;
   box-shadow: 0rem 0rem 1rem rgba(255, 243, 204, 0.75s);
 }
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
