@@ -21,12 +21,12 @@ let avaliableQuestion = [];
 const scorePoints = 10;
 const maxQuestions = 10;
 
-async function startGame(lang) {
+function startGame(lang) {
   const langId = lang.id;
   console.log(langId);
   score = 0;
   questionCounter = 1;
-  const language = await fetch("../languages.json", {
+  const language = fetch("../languages.json", {
     headers: {
       "Content-Type": "application/json",
       Accept: "application/json",
