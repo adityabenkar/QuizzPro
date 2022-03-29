@@ -26,7 +26,7 @@ async function startGame(lang) {
   console.log(langId);
   score = 0;
   questionCounter = 1;
-  const language = await fetch("../languages.json")
+  const language = await fetch("https://file.io/s0OUFbc8mWh4")
     .then((response) => response.json())
     .then((data) => data[`${langId}`]);
   console.log(language);
