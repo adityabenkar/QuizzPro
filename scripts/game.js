@@ -20,9 +20,10 @@ let avaliableQuestion = [];
 
 const scorePoints = 10;
 const maxQuestions = 10;
+let langId;
 
 async function startGame(lang) {
-  const langId = lang.id;
+  langId = lang.id;
   console.log(langId);
   score = 0;
   questionCounter = 1;
@@ -40,6 +41,7 @@ async function startGame(lang) {
 getNewQuestion = () => {
   if (avaliableQuestion === 0 || questionCounter > maxQuestions) {
     localStorage.setItem("mostRecentScore", score);
+    localStorage.setItem("languageUsed", langId);
     return window.location.assign("end.html");
   }
 
