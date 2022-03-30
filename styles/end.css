@@ -24,3 +24,13 @@
   color: #e2eff5;
   width: 15rem;
 }
+
+@media screen and (max-width: 550px) {
+  #username {
+    font-size: 1rem;
+    width: 100%;
+  }
+  #end-text {
+    font-size: 1rem;
+  }
+}

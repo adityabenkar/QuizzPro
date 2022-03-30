@@ -114,6 +114,9 @@ body.HoverBtn .choice-container:hover {
   .choice-container {
     font-size: 1.25rem;
   }
+  .codeContainer {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -122,5 +125,18 @@ body.HoverBtn .choice-container:hover {
     /* display: flex;
     flex-direction: column; */
     grid-gap: 0;
+  }
+  .hud-prefix {
+    font-size: 1rem;
+  }
+  #progressBar {
+    width: 8rem;
+    height: 1rem;
+  }
+  .choice-container {
+    font-size: 1rem;
+  }
+  .codeContainer {
+    font-size: 0.8rem;
   }
 }
