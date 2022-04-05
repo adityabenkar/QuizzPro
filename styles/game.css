@@ -129,6 +129,9 @@ body.HoverBtn .choice-container:hover {
   .hud-prefix {
     font-size: 1rem;
   }
+  #game{
+    padding: 1rem;
+  }
   #progressBar {
     width: 8rem;
     height: 1rem;
@@ -138,5 +141,6 @@ body.HoverBtn .choice-container:hover {
   }
   .codeContainer {
     font-size: 0.8rem;
+    margin-bottom: 1rem;
   }
 }

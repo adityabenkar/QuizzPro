@@ -647,96 +647,189 @@
     }
   ],
 
-  "sql": [{
-    "question": "What is the full form of SQL?",
-    "code": "",
-    "choice1": "Structured Query List",
-    "choice2": "Structure Query Language",
-    "choice3": "Sample Query Language",
-    "choice4": "None of these.",
-    "answer": 2
-  },
-  {
-    "question": "SQL Views are also known as",
-    "code": "",
-    "choice1": "Simple tables",
-    "choice2": "Virtual tables",
-    "choice3": "Complex tables",
-    "choice4": "Actual Tables",
-    "answer": 2
-  },
-  {
-    "question": "Which of the following are some common RDBMS in use?",
-    "code": "",
-    "choice1": "Oracle",
-    "choice2": "MySQL",
-    "choice3": "HeidiSQL",
-    "choice4": "All of the above",
-    "answer": 4
-  },
-  {
-    "question": "Types of SQL Commands are –",
-    "code": "",
-    "choice1": "DDL",
-    "choice2": "DML",
-    "choice3": "DCL",
-    "choice4": "All of the above",
-    "answer": 4
-  },
-  {
-    "question": "Which of the following is not a valid SQL type?",
-    "code": "",
-    "choice1": "DECIMAL",
-    "choice2": "NUMERIC",
-    "choice3": "FLOAT",
-    "choice4": "CHARACTER",
-    "answer": 1
-  },
-  {
-    "question": "Exception handling is possible in SQL Server using _____________",
-    "code": "",
-    "choice1": "FINAL",
-    "choice2": "FINALLY",
-    "choice3": "THROW",
-    "choice4": "All of the mentioned",
-    "answer": 3
-  },
-  {
-    "question": "The SQL statement:",
-    "code": "SELECT ROUND (65.726, -1) FROM DUAL;  ",
-    "choice1": "is illegal",
-    "choice2": "garbage",
-    "choice3": "726",
-    "choice4": "70",
-    "answer": 4
-  },
-  {
-    "question": "Which type of JOIN is used to returns rows that do not have matching values?",
-    "code": "",
-    "choice1": "Natural JOIN",
-    "choice2": "EQUI JOIN",
-    "choice3": "Outer JOIN",
-    "choice4": "All of the above",
-    "answer": 3
-  },
-  {
-    "question": "A CASE SQL statement is ________?",
-    "code": "",
-    "choice1": "A way to establish a loop in SQL.",
-    "choice2": "A way to establish a data definition in SQL",
-    "choice3": "A way to establish an IF-THEN-ELSE in SQL",
-    "choice4": "All of the above.",
-    "answer": 3
-  },
-  {
-    "question": "Group of operations that form a single logical unit of work is known as",
-    "code": "",
-    "choice1": "View",
-    "choice2": "Network",
-    "choice3": "Unit",
-    "choice4": "Transaction",
-    "answer": 4
-  }],
+  "sql": [
+    {
+      "question": "What is the full form of SQL?",
+      "code": "",
+      "choice1": "Structured Query List",
+      "choice2": "Structure Query Language",
+      "choice3": "Sample Query Language",
+      "choice4": "None of these.",
+      "answer": 2
+    },
+    {
+      "question": "SQL Views are also known as",
+      "code": "",
+      "choice1": "Simple tables",
+      "choice2": "Virtual tables",
+      "choice3": "Complex tables",
+      "choice4": "Actual Tables",
+      "answer": 2
+    },
+    {
+      "question": "Which of the following are some common RDBMS in use?",
+      "code": "",
+      "choice1": "Oracle",
+      "choice2": "MySQL",
+      "choice3": "HeidiSQL",
+      "choice4": "All of the above",
+      "answer": 4
+    },
+    {
+      "question": "Types of SQL Commands are –",
+      "code": "",
+      "choice1": "DDL",
+      "choice2": "DML",
+      "choice3": "DCL",
+      "choice4": "All of the above",
+      "answer": 4
+    },
+    {
+      "question": "Which of the following is not a valid SQL type?",
+      "code": "",
+      "choice1": "DECIMAL",
+      "choice2": "NUMERIC",
+      "choice3": "FLOAT",
+      "choice4": "CHARACTER",
+      "answer": 1
+    },
+    {
+      "question": "Exception handling is possible in SQL Server using _____________",
+      "code": "",
+      "choice1": "FINAL",
+      "choice2": "FINALLY",
+      "choice3": "THROW",
+      "choice4": "All of the mentioned",
+      "answer": 3
+    },
+    {
+      "question": "The SQL statement:",
+      "code": "SELECT ROUND (65.726, -1) FROM DUAL;  ",
+      "choice1": "is illegal",
+      "choice2": "garbage",
+      "choice3": "726",
+      "choice4": "70",
+      "answer": 4
+    },
+    {
+      "question": "Which type of JOIN is used to returns rows that do not have matching values?",
+      "code": "",
+      "choice1": "Natural JOIN",
+      "choice2": "EQUI JOIN",
+      "choice3": "Outer JOIN",
+      "choice4": "All of the above",
+      "answer": 3
+    },
+    {
+      "question": "A CASE SQL statement is ________?",
+      "code": "",
+      "choice1": "A way to establish a loop in SQL.",
+      "choice2": "A way to establish a data definition in SQL",
+      "choice3": "A way to establish an IF-THEN-ELSE in SQL",
+      "choice4": "All of the above.",
+      "answer": 3
+    },
+    {
+      "question": "Group of operations that form a single logical unit of work is known as",
+      "code": "",
+      "choice1": "View",
+      "choice2": "Network",
+      "choice3": "Unit",
+      "choice4": "Transaction",
+      "answer": 4
+    }
+  ],
 
-  "c": []
+  "c": [
+    {
+      "question": "What will be the output of the following code snippet?",
+      "code": "#include <stdio.h>\nint main() {\nint a = 3, b = 5;\nint t = a;\na = b;\nb = t;\nprintf(%d %d', a, b);\nreturn 0;\n}",
+      "choice1": "3 3",
+      "choice2": "5 3",
+      "choice3": "5 5",
+      "choice4": "3 5",
+      "answer": 2
+    },
+    {
+      "question": "How is an array initialized in C language?",
+      "code": "",
+      "choice1": "int a[3]={1,2,3};",
+      "choice2": "int a={1,2,3};",
+      "choice3": "int a[]=new int[3];",
+      "choice4": "int a(3)={1,2,3};",
+      "answer": 1
+    },
+    {
+      "question": "What will be the output of the following code snippet?",
+      "code": "#include <stdio.h>\nvoid solve() {\nint a[] = {1, 2, 3, 4, 5};\nint sum = 0;\nfor(int i = 0; i < 5; i++) {\nif(i % 2 == 0) {\nsum += *(a + i);\n}\nelse {\nsum -= *(a + i);\n}\n}\nprintf('%d', sum);\n}\nint main() {\nsolve();\nreturn 0;\n}",
+      "choice1": "2",
+      "choice2": "15",
+      "choice3": "Syntax Error",
+      "choice4": "3",
+      "answer": 3
+    },
+    {
+      "question": "What will be the output of the following code snippet?",
+      "code": "#include <stdio.h>\nvoid solve() {\nint first = 10, second = 20;\nint third = first + second;\n{\nint third = second - first;\nprintf('%d ', third);\n}\nprintf('%d', third);\n}\nint main() {\nsolve();\nreturn 0;\n}",
+      "choice1": "10 30",
+      "choice2": "30 10",
+      "choice3": "10 20",
+      "choice4": "20 10",
+      "answer": 1
+    },
+    {
+      "question": "What will be the output of the following code snippet?",
+      "code": "#include <stdio.h>\nvoid solve() {\nint a = 3;\nint res = a++ + ++a + a++ + ++a;\nprintf('%d', res);\n}\nint main() {\nsolve();\nreturn 0;\n}",
+      "choice1": "12",
+      "choice2": "24",
+      "choice3": "20",
+      "choice4": "18",
+      "answer": 3
+    },
+    {
+      "question": "What will be the value of x in the following code snippet?",
+      "code": "#include <stdio.h>\nvoid solve() {\nint x = printf('Hello');\nprintf(' %d', x);\n}\nint main() {\nsolve();\nreturn 0;\n}",
+      "choice1": "10",
+      "choice2": "5",
+      "choice3": "1",
+      "choice4": "0",
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is an exit controlled loop?",
+      "code": "",
+      "choice1": "While loop",
+      "choice2": "For loop",
+      "choice3": "do-while loop",
+      "choice4": "None of the above",
+      "answer": 3
+    },
+    {
+      "question": "What is the size of the int data type (in bytes) in C?",
+      "code": "",
+      "choice1": "4",
+      "choice2": "8",
+      "choice3": "2",
+      "choice4": "1",
+      "answer": 1
+    },
+    {
+      "question": "What will be the output of the following code snippet?",
+      "code": "#include <stdio.h>\nvoid swap(int *a, int *b) {\nint t = *a;\n*a = *b;\n*b = t;\n}\nvoid solve() {\nint a = 3, b = 5;\nswap(&a, &b);\nprintf('%d %d', a, b);\n}\nint main() {\nsolve();\nreturn 0;\n}",
+      "choice1": "3 5",
+      "choice2": "5 3",
+      "choice3": "5 5",
+      "choice4": "3 3",
+      "answer": 2
+    },
+    {
+      "question": "Which of the following are not standard header files in C?",
+      "code": "",
+      "choice1": "C++",
+      "choice2": "Java",
+      "choice3": "Python",
+      "choice4": "C",
+      "answer": 4
+    }
+  ]
 }
